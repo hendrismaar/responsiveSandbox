@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 .container {
@@ -30,4 +29,26 @@
 .breakpoints h1 {
     padding: 2rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-color: rgba(58, 58, 52, 0.267);
+        color: blanchedalmond;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1188px) {
+    .breakpoints > div {
+        display: block;
+    }
+
+    .breakpoints > div:not(:last-child) {
+        border-bottom: none;
+    }
+
 }
